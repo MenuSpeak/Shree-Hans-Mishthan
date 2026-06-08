@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Shree Hans Mishthan</title>
+    <title>Shree Hans Mishthan - Home Delivery</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -38,29 +38,17 @@
             margin: 2px;
         }
 
+        .tabs-container {
+            text-align: center;
+        }
 
+        .tab-row {
+            margin-bottom: 10px;
+        }
 
-
-
-        
-
-.tabs-container {
-  text-align: center;
-}
-
-.tab-row {
-  margin-bottom: 10px;
-}
-
-.tab {
-  margin: 4px;
-}
-
-
-
-
-
-        
+        .tab {
+            margin: 4px;
+        }
         
         .tab.active {
             background: linear-gradient(90deg, var(--gold1), var(--gold2));
@@ -118,17 +106,6 @@
                 gap: 5px;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
 
         :root {
             --bg: #0b0b0d;
@@ -443,44 +420,6 @@
             color: inherit;
             font-size: 16px;
             width: 100%;
-        }
-
-        /* Tabs Navigation */
-        .tabs-container {
-            position: relative;
-            margin-bottom: 10px;
-        }
-
-        .tabs-scroll {
-            display: flex;
-            gap: 8px;
-            overflow-x: auto;
-            padding: 8px 0;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-
-        .tabs-scroll::-webkit-scrollbar {
-            display: none;
-        }
-
-        .tab {
-            padding: 10px 16px;
-            border-radius: 999px;
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            font-size: 14px;
-            color: var(--muted);
-            cursor: pointer;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .tab.active {
-            background: var(--accent);
-            color: #0b0b0d;
-            border: none;
-            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.12);
         }
 
         /* Menu Grid */
@@ -901,7 +840,7 @@
             font-size: 16px;
         }
 
-        /* Delivery Options in Cart */
+        /* Delivery Options in Cart - ONLY HOME DELIVERY */
         .delivery-options {
             margin: 20px 0;
             padding: 20px;
@@ -925,51 +864,10 @@
             height: 20px;
         }
 
-        .delivery-option-buttons {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .option-btn {
-            flex: 1;
-            padding: 12px;
-            border-radius: 8px;
-            background: transparent;
-            border: 2px solid rgba(255, 255, 255, 0.08);
-            color: var(--muted);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .option-btn:hover {
-            border-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .option-btn.active {
-            background: linear-gradient(90deg, rgba(212, 175, 55, 0.1), rgba(255, 204, 102, 0.1));
-            border-color: var(--gold1);
-            color: var(--gold2);
-        }
-
-        .option-btn svg {
-            width: 18px;
-            height: 18px;
-        }
-
-        /* Delivery Forms */
+        /* Home Delivery Form Only */
         .delivery-form {
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-
-        .delivery-form.active {
             display: block;
+            animation: fadeIn 0.5s ease;
         }
 
         @keyframes fadeIn {
@@ -977,7 +875,6 @@
                 opacity: 0;
                 transform: translateY(-10px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1129,7 +1026,6 @@
                 background: white;
                 color: black;
             }  
-   
             .cart-container,   
             .cart-modal,
             .btn-ghost {
@@ -1143,16 +1039,15 @@
     <div class="container">  
         <!-- Cafe Header - Original Style -->
         <div class="cafe-header">
-<img src="logo.png" alt="Logo" style="width:400px; height:auto; display:block; margin:0 auto;">
+            <img src="logo1.png" alt="Logo" style="width:400px; height:auto; display:block; margin:0 auto;">
             <div class="cafe-name">Shree Hans Mishthan</div>
             <div class="cafe-subtitle"></div>
             <div class="location-info">
                 <div class="location-text"></div>
                 <div class="address"></div>
-
-                  <div class="location-text"><h2></h2></div>
-                  <div class="cafe-subtitle"></div>
-                           <div class="cafe-subtitle"></div>
+                <div class="location-text"><h2></h2></div>
+                <div class="cafe-subtitle"></div>
+                <div class="cafe-subtitle"></div>
                 <div class="mobile-numbers"><br>Mo no.+91 97649 12305</div>
             </div>
             <div class="veg-nonveg">
@@ -1160,103 +1055,25 @@
                     <span class="symbol"></span>
                     <span>VEG</span>
                 </div>
-                 <!-- <div class="nonveg">
-                    <span class="symbol"></span>
-                    <span>NON VEG</span>
-                </div> -->
             </div>
         </div>
 
-<!-- Font Awesome -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<!-- Social Media Buttons -->
-<!-- <div style="display:flex; justify-content:center; gap:25px; margin-top:30px; flex-wrap:wrap;"> -->
-
-    <!-- Instagram -->
-    <!-- <a href="https://www.instagram.com/bhannatbiryani_house_ishwarpur?igsh=MTNqcjk0bDkyNTBveQ==" target="_blank"
-    style="
-    width:70px;
-    height:70px;
-    background:#E1306C;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    font-size:32px;
-    text-decoration:none;
-    "> -->
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <!-- Facebook -->
-    <!-- <a href="https://www.facebook.com/share/p/18mo8SMyiz/" target="_blank"
-    style="
-    width:70px;
-    height:70px;
-    background:#1877F2;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    font-size:32px;
-    text-decoration:none;
-    ">
-        <i class="fab fa-facebook-f"></i>
-    </a> -->
-
-    <!-- YouTube -->
-    <!-- <a href="https://youtube.com/@madanghuge40?si=2bSRtZ56FlgajvoD" target="_blank"
-    style="
-    width:70px;
-    height:70px;
-    background:#FF0000;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    font-size:32px;
-    text-decoration:none;
-    ">
-        <i class="fab fa-youtube"></i>
-    </a>
-
-</div> -->
-
-<!-- <p style="text-align:center; margin-top:10px; font-size:14px; color:white;">
-  Delivery free up to 3 K
-</p> -->
-          
         <!-- Main Menu -->
         <main class="menu">
             <div class="menu-head">
                 <div class="controls">
-                    <div class="search" role="search">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-                            <path d="M21 21l-4.35-4.35" stroke="rgba(255,255,255,0.6)" stroke-width="1.6"
-                                stroke-linecap="round" stroke-linejoin="round"></path>
-                            <circle cx="11" cy="11" r="6" stroke="rgba(255,255,255,0.6)" stroke-width="1.6"
-                                stroke-linecap="round" stroke-linejoin="round"></circle>
-                        </svg>
-                        <!-- <input id="search" placeholder="Search dishes, ingredients..." /> -->
-                    </div> 
-
-
-
-   <div class="tabs-scroll">
-<button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="Snacks">🥟 Snacks</button>
-<button class="tab" data-cat="South Indian">🧆 South Indian</button>
-<button class="tab" data-cat="Rice">🍚 Rice</button>
-<button class="tab" data-cat="Beverage">🥤 Beverage</button>
-<button class="tab" data-cat="Sweets">🥨 Sweets</button>
-<button class="tab" data-cat="Extras">➕ Extras</button>
-  
-   </div>  
+                    <div class="tabs-scroll">
+                        <button class="tab active" data-cat="all">🍽️ All Items</button>
+                        <button class="tab" data-cat="Snacks">🥟 Snacks</button>
+                        <button class="tab" data-cat="South Indian">🧆 South Indian</button>
+                        <button class="tab" data-cat="Rice">🍚 Rice</button>
+                        <button class="tab" data-cat="Beverage">🥤 Beverage</button>
+                        <button class="tab" data-cat="Sweets">🥨 Sweets</button>
+                        <button class="tab" data-cat="Extras">➕ Extras</button>
+                    </div>  
                 </div>
             </div>
 
@@ -1298,53 +1115,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </button>
     </div>
 
-    <!-- Cart Modal -->
+    <!-- Cart Modal - ONLY HOME DELIVERY SECTION -->
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <div class="cart-header">
-                <h3 class="cart-title">Your Order</h3>
+                <h3 class="cart-title">Your Order (Home Delivery)</h3>
                 <button class="close-cart" id="closeCart">&times;</button>
             </div>
 
-            <!-- Delivery Options -->
+            <!-- Home Delivery Form Only - No Restaurant Option -->
             <div class="delivery-options">
                 <h4 class="options-title">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path
-                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
-                    Select Delivery Type
+                    Home Delivery Details
                 </h4>
 
-                <div class="delivery-option-buttons">
-                    <button class="option-btn active" id="restaurantOption"
-                        onclick="selectDeliveryOption('restaurant')">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4" />
-                            <circle cx="12" cy="6" r="2" />
-                        </svg>
-                        Restaurant
-                    </button>
-                    <button class="option-btn" id="homeDeliveryOption" onclick="selectDeliveryOption('home')">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                        Home Delivery
-                    </button>
-                </div>
-
-                <!-- Restaurant Form -->
-                <div class="delivery-form active" id="restaurantForm">
-                    <div class="form-group">
-                        <label class="form-label" for="tableNumber">Table Number</label>
-                        <input type="text" id="tableNumber" class="form-input"
-                            placeholder="Enter your table number (e.g., Table 5, Booth 2)" />
-                    </div>
-                </div>
-
-                <!-- Home Delivery Form -->
                 <div class="delivery-form" id="homeDeliveryForm">
                     <div class="form-group">
                         <label class="form-label" for="customerName">Full Name</label>
@@ -1352,24 +1139,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="customerMobile">Mobile Number</label>
-                        <input type="tel" id="customerMobile" class="form-input"
-                            placeholder="Enter your mobile number" />
+                        <input type="tel" id="customerMobile" class="form-input" placeholder="Enter your mobile number" />
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="customerAddress">Delivery Address</label>
-                        <textarea id="customerAddress" class="form-input" placeholder="Enter your complete address"
-                            rows="3"></textarea>
+                        <textarea id="customerAddress" class="form-input" placeholder="Enter your complete address" rows="3"></textarea>
                     </div>
                 </div>
             </div>
 
             <!-- Customer Details Summary -->
-            <div class="customer-details-summary" id="customerDetailsSummary">
-                <!-- Will be populated by JavaScript -->
-            </div>
+            <div class="customer-details-summary" id="customerDetailsSummary"></div>
 
             <div class="cart-items" id="cartItems">
-                <!-- Cart items will be inserted here -->
                 <div class="cart-empty" id="cartEmpty">Your cart is empty</div>
             </div>
 
@@ -1388,8 +1170,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 <button class="btn-clear" id="clearCart">Clear Cart</button>
                 <button class="btn-whatsapp" id="whatsappOrder">  
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-                        <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488" />
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488" />
                     </svg>
                     Order via WhatsApp
                 </button>
@@ -1398,62 +1179,58 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
 
     <script>
-        // Menu Data - FIXED VERSION
+        // Full Menu Data (Same as original - all items preserved)
         const data = [
- 
-{"id": 1, "cat": "Snacks", "name": "चना पोहा (हाफ) | Chana Poha (Half)", "price": "Rs. 25", "desc": "Chana Poha half portion.", "tags": ["Veg", "Snacks"], "img": "img/chana_poha_half.jpg"},
-{"id": 2, "cat": "Snacks", "name": "चना पोहा (प्लेट) | Chana Poha (Plate)", "price": "Rs. 40", "desc": "Chana Poha full plate.", "tags": ["Veg", "Snacks"], "img": "img/chana_poha_half.jpg"},
-{"id": 3, "cat": "Snacks", "name": "ढोकला (हाफ) | Dhokla (Half)", "price": "Rs. 25", "desc": "Dhokla half portion.", "tags": ["Veg", "Snacks"], "img": "img/dhokla_half.jpg"},
-{"id": 4, "cat": "Snacks", "name": "ढोकला (प्लेट) | Dhokla (Plate)", "price": "Rs. 40", "desc": "Dhokla full plate.", "tags": ["Veg", "Snacks"], "img": "img/dhokla_half.jpg"},
-{"id": 5, "cat": "Snacks", "name": "उपमा (हाफ) | Upama (Half)", "price": "Rs. 25", "desc": "Upama half portion.", "tags": ["Veg", "Snacks"], "img": "img/upama_half.jpg"},
-{"id": 6, "cat": "Snacks", "name": "उपमा (प्लेट) | Upama (Plate)", "price": "Rs. 40", "desc": "Upama full plate.", "tags": ["Veg", "Snacks"], "img": "img/upama_half.jpg"},
-{"id": 7, "cat": "South Indian", "name": "सांबार वडा (हाफ) | Sambar Vada (Half)", "price": "Rs. 25", "desc": "Sambar Vada half portion.", "tags": ["Veg", "South Indian"], "img": "img/sambar_vada_half.jpg"},
-{"id": 8, "cat": "South Indian", "name": "सांबार वडा (प्लेट) | Sambar Vada (Plate)", "price": "Rs. 40", "desc": "Sambar Vada full plate.", "tags": ["Veg", "South Indian"], "img": "img/sambar_vada_half.jpg"},
-{"id": 9, "cat": "South Indian", "name": "इडली (हाफ) | Idli (Half)", "price": "Rs. 25", "desc": "Idli half portion.", "tags": ["Veg", "South Indian"], "img": "img/idli_half.jpg"},
-{"id": 10, "cat": "South Indian", "name": "इडली (प्लेट) | Idli (Plate)", "price": "Rs. 40", "desc": "Idli full plate.", "tags": ["Veg", "South Indian"], "img": "img/idli_half.jpg"},
-{"id": 11, "cat": "South Indian", "name": "मसाला दोसा | Masala Dosa", "price": "Rs. 60", "desc": "Masala Dosa.", "tags": ["Veg", "South Indian"], "img": "img/masala_dosa.jpg"},
-{"id": 12, "cat": "South Indian", "name": "कटिंग मसाला दोसा | Cutting Masala Dosa", "price": "Rs. 70", "desc": "Cutting Masala Dosa.", "tags": ["Veg", "South Indian"], "img": "img/cutting_masala_dosa.jpg"},
-{"id": 13, "cat": "Snacks", "name": "समोसा (हाफ) | Samosa (Half)", "price": "Rs. 25", "desc": "Samosa half portion.", "tags": ["Veg", "Snacks"], "img": "img/samosa_half.jpg"},
-{"id": 14, "cat": "Snacks", "name": "समोसा (प्लेट) | Samosa (Plate)", "price": "Rs. 40", "desc": "Samosa full plate.", "tags": ["Veg", "Snacks"], "img": "img/samosa_half.jpg"},
-{"id": 15, "cat": "Snacks", "name": "कचोरी (हाफ) | Kachori (Half)", "price": "Rs. 25", "desc": "Kachori half portion.", "tags": ["Veg", "Snacks"], "img": "img/kachori_half.jpg"},
-{"id": 16, "cat": "Snacks", "name": "कचोरी (प्लेट) | Kachori (Plate)", "price": "Rs. 40", "desc": "Kachori full plate.", "tags": ["Veg", "Snacks"], "img": "img/kachori_half.jpg"},
-{"id": 17, "cat": "Snacks", "name": "पातोडी (हाफ) | Patodi (Half)", "price": "Rs. 25", "desc": "Patodi half portion.", "tags": ["Veg", "Snacks"], "img": "img/patodi_half.jpg"},
-{"id": 18, "cat": "Snacks", "name": "पातोडी (प्लेट) | Patodi (Plate)", "price": "Rs. 40", "desc": "Patodi full plate.", "tags": ["Veg", "Snacks"], "img": "img/patodi_half.jpg"},
-{"id": 19, "cat": "Snacks", "name": "साबुदाना वडा (हाफ) | Sabudana Vada (Half)", "price": "Rs. 25", "desc": "Sabudana Vada half portion.", "tags": ["Veg", "Snacks"], "img": "img/sabudana_vada_half.jpg"},
-{"id": 20, "cat": "Snacks", "name": "साबुदाना वडा (प्लेट) | Sabudana Vada (Plate)", "price": "Rs. 40", "desc": "Sabudana Vada full plate.", "tags": ["Veg", "Snacks"], "img": "img/sabudana_vada_half.jpg"},
-{"id": 21, "cat": "Snacks", "name": "पाव भाजी | Pav Bhaji", "price": "Rs. 40", "desc": "Pav Bhaji.", "tags": ["Veg", "Snacks"], "img": "img/pav_bhaji.jpg"},
-{"id": 22, "cat": "Extras", "name": "एक्स्ट्रा पाव | Extra Pav", "price": "Rs. 10", "desc": "Extra Pav.", "tags": ["Veg", "Add-on"], "img": "img/extra_pav.jpg"},
-{"id": 23, "cat": "Snacks", "name": "छोला भटुरा | Chhola Bhatura", "price": "Rs. 70", "desc": "Chhola Bhatura.", "tags": ["Veg", "Snacks"], "img": "img/chhola_bhatura.jpg"},
-{"id": 24, "cat": "Extras", "name": "एक्स्ट्रा भटुरा | Extra Bhatura", "price": "Rs. 25", "desc": "Extra Bhatura.", "tags": ["Veg", "Add-on"], "img": "img/extra_bhatura.jpg"},
-{"id": 25, "cat": "Snacks", "name": "दही समोसा (हाफ) | Dahi Samosa (Half)", "price": "Rs. 45", "desc": "Dahi Samosa half portion.", "tags": ["Veg", "Snacks"], "img": "img/dahi_samosa_half.jpg"},
-{"id": 26, "cat": "Snacks", "name": "दही समोसा (प्लेट) | Dahi Samosa (Plate)", "price": "Rs. 70", "desc": "Dahi Samosa full plate.", "tags": ["Veg", "Snacks"], "img": "img/dahi_samosa_half.jpg"},
-{"id": 27, "cat": "Snacks", "name": "दही कचोरी (हाफ) | Dahi Kachori (Half)", "price": "Rs. 45", "desc": "Dahi Kachori half portion.", "tags": ["Veg", "Snacks"], "img": "img/dahi_kachori_half.jpg"},
-{"id": 28, "cat": "Snacks", "name": "दही कचोरी (प्लेट) | Dahi Kachori (Plate)", "price": "Rs. 70", "desc": "Dahi Kachori full plate.", "tags": ["Veg", "Snacks"], "img": "img/dahi_kachori_half.jpg"},
-{"id": 29, "cat": "Snacks", "name": "दही वडा (हाफ) | Dahi Vada (Half)", "price": "Rs. 45", "desc": "Dahi Vada half portion.", "tags": ["Veg", "Snacks"], "img": "img/dahi_vada_half.jpg"},
-{"id": 30, "cat": "Snacks", "name": "दही वडा (प्लेट) | Dahi Vada (Plate)", "price": "Rs. 70", "desc": "Dahi Vada full plate.", "tags": ["Veg", "Snacks"], "img": "img/dahi_vada_half.jpg"},
-{"id": 31, "cat": "Snacks", "name": "ब्रेड पकोडा (हाफ) | Bread Pakoda (Half)", "price": "Rs. 25", "desc": "Bread Pakoda half portion.", "tags": ["Veg", "Snacks"], "img": "img/bread_pakoda_half.jpg"},
-{"id": 32, "cat": "Snacks", "name": "ब्रेड पकोडा (प्लेट) | Bread Pakoda (Plate)", "price": "Rs. 40", "desc": "Bread Pakoda full plate.", "tags": ["Veg", "Snacks"], "img": "img/bread_pakoda_half.jpg"},
-{"id": 33, "cat": "Snacks", "name": "पालक वडा (हाफ) | Palak Vada (Half)", "price": "Rs. 25", "desc": "Palak Vada half portion.", "tags": ["Veg", "Snacks"], "img": "img/palak_vada_half.jpg"},
-{"id": 34, "cat": "Snacks", "name": "पालक वडा (प्लेट) | Palak Vada (Plate)", "price": "Rs. 40", "desc": "Palak Vada full plate.", "tags": ["Veg", "Snacks"], "img": "img/palak_vada_half.jpg"},
-{"id": 35, "cat": "Snacks", "name": "आलु बोंडा (हाफ) | Alu Bonda (Half)", "price": "Rs. 25", "desc": "Alu Bonda half portion.", "tags": ["Veg", "Snacks"], "img": "img/alu_bonda_half.jpg"},
-{"id": 36, "cat": "Snacks", "name": "आलु बोंडा (प्लेट) | Alu Bonda (Plate)", "price": "Rs. 40", "desc": "Alu Bonda full plate.", "tags": ["Veg", "Snacks"], "img": "img/alu_bonda_half.jpg"},
-{"id": 37, "cat": "Rice", "name": "छोला राईस (हाफ) | Chhola Rice (Half)", "price": "Rs. 40", "desc": "Chhola Rice half portion.", "tags": ["Veg", "Rice"], "img": "img/chhola_rice_half.jpg"},
-{"id": 38, "cat": "Rice", "name": "छोला राईस (प्लेट) | Chhola Rice (Plate)", "price": "Rs. 60", "desc": "Chhola Rice full plate.", "tags": ["Veg", "Rice"], "img": "img/chhola_rice_half.jpg"},
-{"id": 39, "cat": "Rice", "name": "पुलाव (हाफ) | Pulav (Half)", "price": "Rs. 40", "desc": "Pulav half portion.", "tags": ["Veg", "Rice", "Pulav"], "img": "img/pulav_half.jpg"},
-{"id": 40, "cat": "Rice", "name": "पुलाव (प्लेट) | Pulav (Plate)", "price": "Rs. 60", "desc": "Pulav full plate.", "tags": ["Veg", "Rice", "Pulav"], "img": "img/pulav_half.jpg"},
-{"id": 41, "cat": "Beverage", "name": "लस्सी (हाफ) | Lassi (Half)", "price": "Rs. 30", "desc": "Lassi half portion.", "tags": ["Veg", "Beverage"], "img": "img/lassi_half.jpg"},
-{"id": 42, "cat": "Beverage", "name": "लस्सी (ग्लास) | Lassi (Glass)", "price": "Rs. 40", "desc": "Lassi full glass.", "tags": ["Veg", "Beverage"], "img": "img/lassi_half.jpg"},
-{"id": 43, "cat": "Sweets", "name": "फाफडा जलेबी | Fafda Jalebi", "price": "Rs. 70", "desc": "Fafda Jalebi.", "tags": ["Veg", "Sweets"], "img": "img/fafda_jalebi.jpg"},
-{"id": 44, "cat": "Sweets", "name": "दही जलेबी | Dahi Jalebi", "price": "Rs. 60", "desc": "Dahi Jalebi.", "tags": ["Veg", "Sweets"], "img": "img/dahi_jalebi.jpg"},
-{"id": 45, "cat": "South Indian", "name": "उत्तपम | Uttapam", "price": "Rs. 100", "desc": "Uttapam.", "tags": ["Veg", "South Indian"], "img": "img/uttapam.jpg"},
-{"id": 46, "cat": "Extras", "name": "एक्स्ट्रा चटनी | Extra Chutney", "price": "Rs. 10", "desc": "Extra Chutney.", "tags": ["Veg", "Add-on"], "img": "img/extra_chutney.jpg"},
-{"id": 47, "cat": "Extras", "name": "एक्स्ट्रा दही | Extra Dahi", "price": "Rs. 20", "desc": "Extra Dahi.", "tags": ["Veg", "Add-on"], "img": "img/extra_dahi.jpg"},  
-
-];
+            {"id": 1, "cat": "Snacks", "name": "चना पोहा (हाफ) | Chana Poha (Half)", "price": "Rs. 25", "desc": "Chana Poha half portion.", "tags": ["Veg", "Snacks"], "img": "img/chana_poha_half.jpg"},
+            {"id": 2, "cat": "Snacks", "name": "चना पोहा (प्लेट) | Chana Poha (Plate)", "price": "Rs. 40", "desc": "Chana Poha full plate.", "tags": ["Veg", "Snacks"], "img": "img/chana_poha_half.jpg"},
+            {"id": 3, "cat": "Snacks", "name": "ढोकला (हाफ) | Dhokla (Half)", "price": "Rs. 25", "desc": "Dhokla half portion.", "tags": ["Veg", "Snacks"], "img": "img/dhokla_half.jpg"},
+            {"id": 4, "cat": "Snacks", "name": "ढोकला (प्लेट) | Dhokla (Plate)", "price": "Rs. 40", "desc": "Dhokla full plate.", "tags": ["Veg", "Snacks"], "img": "img/dhokla_half.jpg"},
+            {"id": 5, "cat": "Snacks", "name": "उपमा (हाफ) | Upama (Half)", "price": "Rs. 25", "desc": "Upama half portion.", "tags": ["Veg", "Snacks"], "img": "img/upama_half.jpg"},
+            {"id": 6, "cat": "Snacks", "name": "उपमा (प्लेट) | Upama (Plate)", "price": "Rs. 40", "desc": "Upama full plate.", "tags": ["Veg", "Snacks"], "img": "img/upama_half.jpg"},
+            {"id": 7, "cat": "South Indian", "name": "सांबार वडा (हाफ) | Sambar Vada (Half)", "price": "Rs. 25", "desc": "Sambar Vada half portion.", "tags": ["Veg", "South Indian"], "img": "img/sambar_vada_half.jpeg"},
+            {"id": 8, "cat": "South Indian", "name": "सांबार वडा (प्लेट) | Sambar Vada (Plate)", "price": "Rs. 40", "desc": "Sambar Vada full plate.", "tags": ["Veg", "South Indian"], "img": "img/sambar_vada_half.jpeg"},
+            {"id": 9, "cat": "South Indian", "name": "इडली (हाफ) | Idli (Half)", "price": "Rs. 25", "desc": "Idli half portion.", "tags": ["Veg", "South Indian"], "img": "img/idli_half.jpg"},
+            {"id": 10, "cat": "South Indian", "name": "इडली (प्लेट) | Idli (Plate)", "price": "Rs. 40", "desc": "Idli full plate.", "tags": ["Veg", "South Indian"], "img": "img/idli_half.jpg"},
+            {"id": 11, "cat": "South Indian", "name": "मसाला दोसा | Masala Dosa", "price": "Rs. 60", "desc": "Masala Dosa.", "tags": ["Veg", "South Indian"], "img": "img/masala_dosa.jpg"},
+            {"id": 12, "cat": "South Indian", "name": "कटिंग मसाला दोसा | Cutting Masala Dosa", "price": "Rs. 70", "desc": "Cutting Masala Dosa.", "tags": ["Veg", "South Indian"], "img": "img/cutting_masala_dosa.jpg"},
+            {"id": 13, "cat": "Snacks", "name": "समोसा (हाफ) | Samosa (Half)", "price": "Rs. 25", "desc": "Samosa half portion.", "tags": ["Veg", "Snacks"], "img": "img/samosa_half.jpg"},
+            {"id": 14, "cat": "Snacks", "name": "समोसा (प्लेट) | Samosa (Plate)", "price": "Rs. 40", "desc": "Samosa full plate.", "tags": ["Veg", "Snacks"], "img": "img/samosa_half.jpg"},
+            {"id": 15, "cat": "Snacks", "name": "कचोरी (हाफ) | Kachori (Half)", "price": "Rs. 25", "desc": "Kachori half portion.", "tags": ["Veg", "Snacks"], "img": "img/kachori_half.jpg"},
+            {"id": 16, "cat": "Snacks", "name": "कचोरी (प्लेट) | Kachori (Plate)", "price": "Rs. 40", "desc": "Kachori full plate.", "tags": ["Veg", "Snacks"], "img": "img/kachori_half.jpg"},
+            {"id": 17, "cat": "Snacks", "name": "पातोडी (हाफ) | Patodi (Half)", "price": "Rs. 25", "desc": "Patodi half portion.", "tags": ["Veg", "Snacks"], "img": "img/patodi_half.jpg"},
+            {"id": 18, "cat": "Snacks", "name": "पातोडी (प्लेट) | Patodi (Plate)", "price": "Rs. 40", "desc": "Patodi full plate.", "tags": ["Veg", "Snacks"], "img": "img/patodi_half.jpg"},
+            {"id": 19, "cat": "Snacks", "name": "साबुदाना वडा (हाफ) | Sabudana Vada (Half)", "price": "Rs. 25", "desc": "Sabudana Vada half portion.", "tags": ["Veg", "Snacks"], "img": "img/sabudana_vada_half.jpg"},
+            {"id": 20, "cat": "Snacks", "name": "साबुदाना वडा (प्लेट) | Sabudana Vada (Plate)", "price": "Rs. 40", "desc": "Sabudana Vada full plate.", "tags": ["Veg", "Snacks"], "img": "img/sabudana_vada_half.jpg"},
+            {"id": 21, "cat": "Snacks", "name": "पाव भाजी | Pav Bhaji", "price": "Rs. 40", "desc": "Pav Bhaji.", "tags": ["Veg", "Snacks"], "img": "img/pav_bhaji.jpg"},
+            {"id": 22, "cat": "Extras", "name": "एक्स्ट्रा पाव | Extra Pav", "price": "Rs. 10", "desc": "Extra Pav.", "tags": ["Veg", "Add-on"], "img": "img/extra_pav.jpg"},
+            {"id": 23, "cat": "Snacks", "name": "छोला भटुरा | Chhola Bhatura", "price": "Rs. 70", "desc": "Chhola Bhatura.", "tags": ["Veg", "Snacks"], "img": "img/chhola_bhatura.jpg"},
+            {"id": 24, "cat": "Extras", "name": "एक्स्ट्रा भटुरा | Extra Bhatura", "price": "Rs. 25", "desc": "Extra Bhatura.", "tags": ["Veg", "Add-on"], "img": "img/extra_bhatura.jpg"},
+            {"id": 25, "cat": "Snacks", "name": "दही समोसा (हाफ) | Dahi Samosa (Half)", "price": "Rs. 45", "desc": "Dahi Samosa half portion.", "tags": ["Veg", "Snacks"], "img": "img/dahi_samosa_half.jpg"},
+            {"id": 26, "cat": "Snacks", "name": "दही समोसा (प्लेट) | Dahi Samosa (Plate)", "price": "Rs. 70", "desc": "Dahi Samosa full plate.", "tags": ["Veg", "Snacks"], "img": "img/dahi_samosa_half.jpg"},
+            {"id": 27, "cat": "Snacks", "name": "दही कचोरी (हाफ) | Dahi Kachori (Half)", "price": "Rs. 45", "desc": "Dahi Kachori half portion.", "tags": ["Veg", "Snacks"], "img": "img/dahi_kachori_half.jpg"},
+            {"id": 28, "cat": "Snacks", "name": "दही कचोरी (प्लेट) | Dahi Kachori (Plate)", "price": "Rs. 70", "desc": "Dahi Kachori full plate.", "tags": ["Veg", "Snacks"], "img": "img/dahi_kachori_half.jpg"},
+            {"id": 29, "cat": "Snacks", "name": "दही वडा (हाफ) | Dahi Vada (Half)", "price": "Rs. 45", "desc": "Dahi Vada half portion.", "tags": ["Veg", "Snacks"], "img": "img/dahi_vada_half.jpg"},
+            {"id": 30, "cat": "Snacks", "name": "दही वडा (प्लेट) | Dahi Vada (Plate)", "price": "Rs. 70", "desc": "Dahi Vada full plate.", "tags": ["Veg", "Snacks"], "img": "img/dahi_vada_half.jpg"},
+            {"id": 31, "cat": "Snacks", "name": "ब्रेड पकोडा (हाफ) | Bread Pakoda (Half)", "price": "Rs. 25", "desc": "Bread Pakoda half portion.", "tags": ["Veg", "Snacks"], "img": "img/bread_pakoda_half.jpg"},
+            {"id": 32, "cat": "Snacks", "name": "ब्रेड पकोडा (प्लेट) | Bread Pakoda (Plate)", "price": "Rs. 40", "desc": "Bread Pakoda full plate.", "tags": ["Veg", "Snacks"], "img": "img/bread_pakoda_half.jpg"},
+            {"id": 33, "cat": "Snacks", "name": "पालक वडा (हाफ) | Palak Vada (Half)", "price": "Rs. 25", "desc": "Palak Vada half portion.", "tags": ["Veg", "Snacks"], "img": "img/palak_vada_half.jpg"},
+            {"id": 34, "cat": "Snacks", "name": "पालक वडा (प्लेट) | Palak Vada (Plate)", "price": "Rs. 40", "desc": "Palak Vada full plate.", "tags": ["Veg", "Snacks"], "img": "img/palak_vada_half.jpg"},
+            {"id": 35, "cat": "Snacks", "name": "आलु बोंडा (हाफ) | Alu Bonda (Half)", "price": "Rs. 25", "desc": "Alu Bonda half portion.", "tags": ["Veg", "Snacks"], "img": "img/alu_bonda_half.jpg"},
+            {"id": 36, "cat": "Snacks", "name": "आलु बोंडा (प्लेट) | Alu Bonda (Plate)", "price": "Rs. 40", "desc": "Alu Bonda full plate.", "tags": ["Veg", "Snacks"], "img": "img/alu_bonda_half.jpg"},
+            {"id": 37, "cat": "Rice", "name": "छोला राईस (हाफ) | Chhola Rice (Half)", "price": "Rs. 40", "desc": "Chhola Rice half portion.", "tags": ["Veg", "Rice"], "img": "img/chhola_rice_half.jpg"},
+            {"id": 38, "cat": "Rice", "name": "छोला राईस (प्लेट) | Chhola Rice (Plate)", "price": "Rs. 60", "desc": "Chhola Rice full plate.", "tags": ["Veg", "Rice"], "img": "img/chhola_rice_half.jpg"},
+            {"id": 39, "cat": "Rice", "name": "पुलाव (हाफ) | Pulav (Half)", "price": "Rs. 40", "desc": "Pulav half portion.", "tags": ["Veg", "Rice", "Pulav"], "img": "img/pulav_half.jpg"},
+            {"id": 40, "cat": "Rice", "name": "पुलाव (प्लेट) | Pulav (Plate)", "price": "Rs. 60", "desc": "Pulav full plate.", "tags": ["Veg", "Rice", "Pulav"], "img": "img/pulav_half.jpg"},
+            {"id": 41, "cat": "Beverage", "name": "लस्सी (हाफ) | Lassi (Half)", "price": "Rs. 30", "desc": "Lassi half portion.", "tags": ["Veg", "Beverage"], "img": "img/lassi_half.jpg"},
+            {"id": 42, "cat": "Beverage", "name": "लस्सी (ग्लास) | Lassi (Glass)", "price": "Rs. 40", "desc": "Lassi full glass.", "tags": ["Veg", "Beverage"], "img": "img/lassi_half.jpg"},
+            {"id": 43, "cat": "Sweets", "name": "फाफडा जलेबी | Fafda Jalebi", "price": "Rs. 70", "desc": "Fafda Jalebi.", "tags": ["Veg", "Sweets"], "img": "img/fafda_jalebi.jpg"},
+            {"id": 44, "cat": "Sweets", "name": "दही जलेबी | Dahi Jalebi", "price": "Rs. 60", "desc": "Dahi Jalebi.", "tags": ["Veg", "Sweets"], "img": "img/dahi_jalebi.jpg"},
+            {"id": 45, "cat": "South Indian", "name": "उत्तपम | Uttapam", "price": "Rs. 100", "desc": "Uttapam.", "tags": ["Veg", "South Indian"], "img": "img/uttapam.jpg"},
+            {"id": 46, "cat": "Extras", "name": "एक्स्ट्रा चटनी | Extra Chutney", "price": "Rs. 10", "desc": "Extra Chutney.", "tags": ["Veg", "Add-on"], "img": "img/extra_chutney.jpg"},
+            {"id": 47, "cat": "Extras", "name": "एक्स्ट्रा दही | Extra Dahi", "price": "Rs. 20", "desc": "Extra Dahi.", "tags": ["Veg", "Add-on"], "img": "img/extra_dahi.jpg"}
+        ];
         
-        // Cart functionality    
         let cart = [];
-        let deliveryType = 'restaurant'; // Default to restaurant
         const cartButton = document.getElementById('cartButton');
         const cartModal = document.getElementById('cartModal');
         const closeCart = document.getElementById('closeCart');
@@ -1466,125 +1243,59 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         const addAnotherItem = document.getElementById('addAnotherItem');
         const customerDetailsSummary = document.getElementById('customerDetailsSummary');
 
-        // Helper function to extract numeric price from price string (e.g., "Rs. 120/-" -> 120)
         function extractPrice(priceStr) {
             if (!priceStr) return 0;
-            // Match first number in the string
             const match = priceStr.match(/\d+/);
-            if (match) {
-                return parseInt(match[0], 10);
-            }
-            return 0;
+            return match ? parseInt(match[0], 10) : 0;
         }
 
-        // Delivery option selection
-        function selectDeliveryOption(type) {
-            deliveryType = type;
-
-            // Update button states
-            document.getElementById('restaurantOption').classList.toggle('active', type === 'restaurant');
-            document.getElementById('homeDeliveryOption').classList.toggle('active', type === 'home');
-
-            // Show/hide forms
-            document.getElementById('restaurantForm').classList.toggle('active', type === 'restaurant');
-            document.getElementById('homeDeliveryForm').classList.toggle('active', type === 'home');
-
-            // Update details summary
-            updateCustomerDetailsSummary();
-        }
-
-        // Update customer details summary
         function updateCustomerDetailsSummary() {
-            let summaryHTML = '';
-            let showSummary = false;
+            const name = document.getElementById('customerName').value.trim();
+            const mobile = document.getElementById('customerMobile').value.trim();
+            const address = document.getElementById('customerAddress').value.trim();
 
-            if (deliveryType === 'restaurant') {
-                const tableNumber = document.getElementById('tableNumber').value.trim();
-
-                if (tableNumber) {
-                    showSummary = true;
-                    summaryHTML = `
-            <div class="summary-title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 12v12M15 12v12M5 12l-2 9h18l-2-9M5 12V8c0-1.105.895-2 2-2h10c1.105 0 2 .895 2 2v4"/>
-                <circle cx="12" cy="6" r="2"/>
-              </svg>
-              Restaurant Order
-            </div>
-            <div class="summary-details">
-              <div><strong>Type:</strong> Dine-in</div>
-              <div><strong>Table Number:</strong> ${tableNumber}</div>
-            </div>
-          `;
-                }
-            } else {
-                const name = document.getElementById('customerName').value.trim();
-                const mobile = document.getElementById('customerMobile').value.trim();
-                const address = document.getElementById('customerAddress').value.trim();
-
-                if (name || mobile || address) {
-                    showSummary = true;
-                    summaryHTML = `
-            <div class="summary-title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-              </svg>
-              Delivery Order
-            </div>
-            <div class="summary-details">
-              <div><strong>Type:</strong> Home Delivery</div>
-              ${name ? `<div><strong>Name:</strong> ${name}</div>` : ''}
-              ${mobile ? `<div><strong>Mobile:</strong> ${mobile}</div>` : ''}
-              ${address ? `<div><strong>Address:</strong> ${address}</div>` : ''}
-            </div>
-          `;
-                }
-            }
-
-            if (showSummary) {
-                customerDetailsSummary.innerHTML = summaryHTML;
+            if (name || mobile || address) {
+                customerDetailsSummary.innerHTML = `
+                    <div class="summary-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        Delivery Order
+                    </div>
+                    <div class="summary-details">
+                        <div><strong>Type:</strong> Home Delivery</div>
+                        ${name ? `<div><strong>Name:</strong> ${name}</div>` : ''}
+                        ${mobile ? `<div><strong>Mobile:</strong> ${mobile}</div>` : ''}
+                        ${address ? `<div><strong>Address:</strong> ${address}</div>` : ''}
+                    </div>
+                `;
                 customerDetailsSummary.classList.add('active');
             } else {
                 customerDetailsSummary.classList.remove('active');
             }
         }
 
-        // Toggle cart modal
         cartButton.addEventListener('click', () => {
             cartModal.classList.add('open');
             updateCustomerDetailsSummary();
         });
 
-        closeCart.addEventListener('click', () => {
-            cartModal.classList.remove('open');
-        });
+        closeCart.addEventListener('click', () => cartModal.classList.remove('open'));
 
-        // Add to cart function with animation
         function addToCart(item, button) {
             const existingItem = cart.find(cartItem => cartItem.id === item.id);
-
             if (existingItem) {
                 existingItem.quantity += 1;
             } else {
-                cart.push({
-                    id: item.id,
-                    name: item.name,
-                    price: item.price,
-                    quantity: 1
-                });
+                cart.push({ id: item.id, name: item.name, price: item.price, quantity: 1 });
             }
-
             updateCart();
-
-            // Animation effect
             button.classList.add('adding');
             button.innerHTML = 'Adding...';
-
             setTimeout(() => {
                 button.classList.remove('adding');
                 button.classList.add('added');
                 button.innerHTML = '✓ Added';
-
                 setTimeout(() => {
                     button.classList.remove('added');
                     button.innerHTML = 'Add to Cart';
@@ -1592,232 +1303,108 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             }, 500);
         }
 
-        // Remove from cart function
         function removeFromCart(itemId) {
             cart = cart.filter(item => item.id !== itemId);
             updateCart();
         }
 
-        // Update quantity function
         function updateQuantity(itemId, change) {
             const item = cart.find(item => item.id === itemId);
-
             if (item) {
                 item.quantity += change;
-
-                if (item.quantity <= 0) {
-                    removeFromCart(itemId);
-                } else {
-                    updateCart();
-                }
+                if (item.quantity <= 0) removeFromCart(itemId);
+                else updateCart();
             }
         }
 
-        // Update cart display
         function updateCart() {
-            // Update cart count
             const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
             cartCount.textContent = totalItems;
-
-            // Update cart items
             if (cart.length === 0) {
                 cartEmpty.style.display = 'block';
                 cartItems.innerHTML = '';
                 cartTotal.textContent = '₹0';
             } else {
                 cartEmpty.style.display = 'none';
-
-                let itemsHTML = '';
-                let totalAmount = 0;
-
+                let itemsHTML = '', totalAmount = 0;
                 cart.forEach(item => {
                     const priceValue = extractPrice(item.price);
-                    const itemTotal = priceValue * item.quantity;
-                    totalAmount += itemTotal;
-
+                    totalAmount += priceValue * item.quantity;
                     itemsHTML += `
-            <div class="cart-item">
-              <div class="item-info">
-                <div class="item-name">${item.name}</div>
-                <div class="item-price">${item.price}</div>
-              </div>
-              <div class="item-quantity">
-                <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
-                <span class="quantity">${item.quantity}</span>
-                <button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button>
-                <button class="remove-item" onclick="removeFromCart(${item.id})">×</button>
-              </div>
-            </div>
-          `;
+                        <div class="cart-item">
+                            <div class="item-info">
+                                <div class="item-name">${item.name}</div>
+                                <div class="item-price">${item.price}</div>
+                            </div>
+                            <div class="item-quantity">
+                                <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
+                                <span class="quantity">${item.quantity}</span>
+                                <button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button>
+                                <button class="remove-item" onclick="removeFromCart(${item.id})">×</button>
+                            </div>
+                        </div>`;
                 });
-
                 cartItems.innerHTML = itemsHTML;
                 cartTotal.textContent = `₹${totalAmount}`;
             }
         }
 
-        // Clear cart
-        clearCart.addEventListener('click', () => {
-            cart = [];
-            updateCart();
-        });
+        clearCart.addEventListener('click', () => { cart = []; updateCart(); });
 
-        // Add another item button functionality
         addAnotherItem.addEventListener('click', () => {
             cartModal.classList.remove('open');
-            
-            // Scroll to top of menu
-            window.scrollTo({
-                top: document.querySelector('.menu-head').offsetTop - 20,
-                behavior: 'smooth'
-            });
-            
-            // Focus on search to help user find items
-            setTimeout(() => {
-                document.getElementById('search').focus();
-            }, 500);
+            window.scrollTo({ top: document.querySelector('.menu-head').offsetTop - 20, behavior: 'smooth' });
         });
 
-        // WhatsApp order function with customer details
         whatsappOrder.addEventListener('click', () => {
-            if (cart.length === 0) {
-                alert('Your cart is empty!');
-                return;
-            }
-
-            // Validate details based on delivery type
-            let validationPassed = true;
-            let validationMessage = '';
-
-            if (deliveryType === 'restaurant') {
-                const tableNumber = document.getElementById('tableNumber').value.trim();
-
-                if (!tableNumber) {
-                    validationPassed = false;
-                    validationMessage = 'Please enter your table number';
-                }
-            } else {
-                const customerName = document.getElementById('customerName').value.trim();
-                const customerMobile = document.getElementById('customerMobile').value.trim();
-                const customerAddress = document.getElementById('customerAddress').value.trim();
-
-                if (!customerName || !customerMobile || !customerAddress) {
-                    validationPassed = false;
-                    validationMessage = 'Please fill in all delivery details (Name, Mobile, Address)';
-                }
-            }
-
-            if (!validationPassed) {
-                alert(validationMessage);
-                return;
-            }
-
-            let message = `Hello! I would like to place an order:\n\n`;
-
-            // Add delivery details
-            if (deliveryType === 'restaurant') {
-                const tableNumber = document.getElementById('tableNumber').value.trim();
-
-                message += `**Delivery Type:** Dine-in\n`;
-                message += `**Table Number:** ${tableNumber}\n\n`;
-            } else {
-                const customerName = document.getElementById('customerName').value.trim();
-                const customerMobile = document.getElementById('customerMobile').value.trim();
-                const customerAddress = document.getElementById('customerAddress').value.trim();
-
-                message += `**Delivery Type:** Home Delivery\n`;
-                message += `**Name:** ${customerName}\n`;
-                message += `**Mobile:** ${customerMobile}\n`;
-                message += `**Address:** ${customerAddress}\n\n`;
-            }
-
-            message += `**Order Details:**\n`;
-
-            cart.forEach(item => {
-                message += `• ${item.name} - ${item.quantity} x ${item.price}\n`;
-            });
-
-            const totalAmount = cart.reduce((sum, item) => {
-                const priceValue = extractPrice(item.price);
-                return sum + (priceValue * item.quantity);
-            }, 0);
-
-            message += `\n**Total Amount:** ₹${totalAmount}\n\n`;
-            message += `Thank you!`;
-
-            // Encode the message for WhatsApp URL
-            const encodedMessage = encodeURIComponent(message);
-            const whatsappURL = `https://wa.me/919764912305?text=${encodedMessage}`;
-
-            // Open WhatsApp in a new tab
-            window.open(whatsappURL, '_blank');
-
-            // Close cart modal after order
-            setTimeout(() => {
-                cartModal.classList.remove('open');
-            }, 1000);
+            if (cart.length === 0) { alert('Your cart is empty!'); return; }
+            const name = document.getElementById('customerName').value.trim();
+            const mobile = document.getElementById('customerMobile').value.trim();
+            const address = document.getElementById('customerAddress').value.trim();
+            if (!name || !mobile || !address) { alert('Please fill in all delivery details (Name, Mobile, Address)'); return; }
+            let message = `Hello! I would like to place an order for Home Delivery:\n\n`;
+            message += `**Name:** ${name}\n**Mobile:** ${mobile}\n**Address:** ${address}\n\n**Order Details:**\n`;
+            cart.forEach(item => { message += `• ${item.name} - ${item.quantity} x ${item.price}\n`; });
+            const totalAmount = cart.reduce((sum, item) => sum + (extractPrice(item.price) * item.quantity), 0);
+            message += `\n**Total Amount:** ₹${totalAmount}\n\nThank you!`;
+            window.open(`https://wa.me/919764912305?text=${encodeURIComponent(message)}`, '_blank');
+            setTimeout(() => cartModal.classList.remove('open'), 1000);
         });
 
-        // Render menu items
         function renderMenuItems(items) {
             const menuGrid = document.getElementById('menuGrid');
-
             if (items.length === 0) {
                 menuGrid.innerHTML = '<p style="text-align:center;color:var(--muted);grid-column:1/-1;padding:40px 20px">No items found</p>';
                 return;
             }
-
             menuGrid.innerHTML = items.map(item => `
-        <div class="card" data-cat="${item.cat}">
-          <div class="card-header">
-            <div class="thumb">
-              <img src="${item.img}" alt="${item.name}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDMpIi8+CjxwYXRoIGQ9Ik03MCA4MEgxMTBNODAgNzBIOTBNNjUgOTVIMTA1TTk1IDY1VjEwNU02NSA2NVYxMDVNNzUgNzVIOThNNzUgODVIOThNNzUgOTVIOThNNzUgMTA1SDk4TTY1IDc1SDcyTTY1IDg1SDcyTTY1IDk1SDcyTTY1IDEwNUg3Mk0xMDggNzVIMTE1TTEwOCA4NUgxMTVNMTA4IDk1SDExNU0xMDggMTA1SDExNSIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMSkiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+'">
-            </div>
-            <div class="card-info">
-              <h3 class="dish">${item.name}</h3>
-              <p class="desc">${item.desc}</p>
-              <div class="tags">
-                ${item.tags.map(tag => `<span class="pill">${tag}</span>`).join('')}
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="price">${item.price}</div>
-            <button class="btn-primary" onclick='addToCart(${JSON.stringify(item).replace(/'/g, "\\'")}, this)'>Add to Cart</button>
-          </div>
-        </div>
-      `).join('');
+                <div class="card">
+                    <div class="card-header">
+                        <div class="thumb">
+                            <img src="${item.img}" alt="${item.name}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDMpIi8+CjxwYXRoIGQ9Ik03MCA4MEgxMTBNODAgNzBIOTBNNjUgOTVIMTA1TTk1IDY1VjEwNU02NSA2NVYxMDVNNzUgNzVIOThNNzUgODVIOThNNzUgOTVIOThNNzUgMTA1SDk4TTY1IDc1SDcyTTY1IDg1SDcyTTY1IDk1SDcyTTY1IDEwNUg3Mk0xMDggNzVIMTE1TTEwOCA4NUgxMTVNMTA4IDk1SDExNU0xMDggMTA1SDExNSIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMSkiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+'">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="dish">${item.name}</h3>
+                            <p class="desc">${item.desc}</p>
+                            <div class="tags">
+                                ${item.tags.map(tag => `<span class="pill">${tag}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price">${item.price}</div>
+                        <button class="btn-primary" onclick='addToCart(${JSON.stringify(item).replace(/'/g, "\\'")}, this)'>Add to Cart</button>
+                    </div>
+                </div>
+            `).join('');
         }
 
-        // Filter menu items by category
         function filterByCategory(category) {
-            if (category === 'all') {
-                renderMenuItems(data);
-            } else {
-                const filteredItems = data.filter(item => item.cat === category);
-                renderMenuItems(filteredItems);
-            }
+            renderMenuItems(category === 'all' ? data : data.filter(item => item.cat === category));
         }
 
-        // Search functionality
-        function searchItems(query) {
-            const filteredItems = data.filter(item =>
-                item.name.toLowerCase().includes(query.toLowerCase()) ||
-                item.desc.toLowerCase().includes(query.toLowerCase()) ||
-                item.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
-            );
-            renderMenuItems(filteredItems);
-        }
-
-        // Initialize the page
         document.addEventListener('DOMContentLoaded', () => {
-            // Set default delivery option
-            selectDeliveryOption('restaurant');
-
-            // Render menu items
             renderMenuItems(data);
-
-            // Tab functionality
             document.querySelectorAll('.tab').forEach(tab => {
                 tab.addEventListener('click', () => {
                     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -1825,25 +1412,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                     filterByCategory(tab.dataset.cat);
                 });
             });
-
-            // Search functionality
-            document.getElementById('search').addEventListener('input', (e) => {
-                searchItems(e.target.value);
-            });
-
-            // Update details summary when form inputs change
-            document.getElementById('tableNumber').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerName').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerMobile').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerAddress').addEventListener('input', updateCustomerDetailsSummary);
         });
 
-        // Make functions available globally
         window.addToCart = addToCart;
         window.removeFromCart = removeFromCart;
         window.updateQuantity = updateQuantity;
-        window.selectDeliveryOption = selectDeliveryOption;
     </script>
 </body>
-
 </html>
